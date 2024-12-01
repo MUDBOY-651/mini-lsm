@@ -356,7 +356,6 @@ impl LsmStorageInner {
 
         *guard = Arc::new(snapshot);
 
-        drop(guard);
         // add WAL
 
         Ok(())
